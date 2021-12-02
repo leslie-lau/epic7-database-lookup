@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Epic 7 Database Lookup</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header style="text-align: center;"> 
+	<h1>Epic 7 Database</h1> 
+	<img src="https://gamehag.com/img/games/logo/epic-seven.png">
+</header>
+<main>
+	<article>
+		<section style="text-align: center;">
+			<div class="card">
+				<h2>Character List</h2>
+				<table id="charTable">
+					<tr>
+						<th>Name</th>
+						<th>Character ID</th>
+					</tr>
+				</table>
+				<ul id="charList">
+				</ul>
+			</div>
+			<div class="card">
+				<h2>Character Lookup</h2>
+				<div>
+					<p>
+						<img id="searchErrorIcon" src="https://icones.pro/wp-content/uploads/2021/05/symbole-d-avertissement-jaune.png" title="Invalid Character ID">
+						<input id="searchInput" type="text" name="hero" placeholder="Character ID" value="" required>
+						<button onclick="getHero()">Search</button>
+					</p>
+				</div>
+				<img id="heroIcon" src="https://assets.epicsevendb.com/_source/face/c1001_s.png">
+				<p id="heroDetails">Ras // 3 Star</p>
+				<p id="heroDetailsExtra">Attribute: fire</p>
+				<p id="heroStory">Created to protect the world and all life within it, he is admired as the leader of the Heirs and the alter ego of the Goddess. He has a good personality and is very understanding, though he lacks some understanding of Humans.</p>
+			</div>
+		</section>
+	</article>
+</main>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>

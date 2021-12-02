@@ -1,0 +1,28 @@
+header{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.card{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px;
+	width: 350px;
+}
+th{
+	text-align: left;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+#searchInput{
+	border: none;
+	border-bottom: thin solid grey;
+}
+#searchErrorIcon{
+	vertical-align: middle; 
+	visibility: hidden;
+	width: 20px;
+}
