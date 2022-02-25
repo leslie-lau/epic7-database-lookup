@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<header style="text-align: center;"> 
+<header> 
 	<h1>Epic 7 Database</h1> 
 	<img src="https://gamehag.com/img/games/logo/epic-seven.png">
 </header>
 <main>
 	<article>
-		<section style="text-align: center;">
+		<section class="flex-container">
 			<div class="card">
 				<h2>Character List</h2>
 				<table id="charTable">
@@ -20,16 +20,14 @@
 						<th>Character ID</th>
 					</tr>
 				</table>
-				<ul id="charList">
-				</ul>
 			</div>
-			<div class="card">
+			<div class="card character">
 				<h2>Character Lookup</h2>
 				<div>
 					<p>
 						<img id="searchErrorIcon" src="https://icones.pro/wp-content/uploads/2021/05/symbole-d-avertissement-jaune.png" title="Invalid Character ID">
 						<input id="searchInput" type="text" name="hero" placeholder="Character ID" value="" required>
-						<button onclick="getHero()">Search</button>
+						<button onclick="displayHeroData()">Search</button>
 					</p>
 				</div>
 				<img id="heroIcon" src="https://assets.epicsevendb.com/_source/face/c1001_s.png">
