@@ -1,12 +1,22 @@
 header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 .card{
-	display: inline-block;
-	vertical-align: top;
 	margin: 15px;
 	width: 350px;
+}
+.card.character{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.flex-container{
+	display: flex;
+	justify-content: center;
 }
 th{
 	text-align: left;
@@ -22,7 +32,9 @@ ul{
 	border-bottom: thin solid grey;
 }
 #searchErrorIcon{
-	vertical-align: middle; 
 	visibility: hidden;
 	width: 20px;
+}
+#heroDetailsExtra{
+	word-break: break-word;
 }
